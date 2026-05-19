@@ -73,7 +73,9 @@ let obsProcess = null;
 
 let lastVideoTime = -1;
 let frozenCheckTimestamp = Date.now();
-const FROZEN_THRESHOLD_MS = 15000;
+// const FROZEN_THRESHOLD_MS = 15000;
+const FROZEN_THRESHOLD_MS = 5000; // 👈 15000 ki jagah 5000 likh dein
+
 
 if (!fs.existsSync('./screenshots')) fs.mkdirSync('./screenshots');
 let pendingScreenshots = [];
